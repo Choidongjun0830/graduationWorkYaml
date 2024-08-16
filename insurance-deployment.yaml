@@ -46,3 +46,18 @@ spec:
                 secretKeyRef:
                   name: insurance-secret
                   key: spring.mail.password
+            - name: ETHERSCAN_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: etherscan.api.key
+            - name: ETHERSCAN_CONTRACT_ADDRESS
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: etherscan.contract.address
+            - name: METAMASK_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: metamask.private.key
