@@ -5,9 +5,9 @@ metadata:
   labels:
     type: local
 spec:
-  storageClassName: manual
+  storageClassName: db-storage-class
   capacity:
-    storage: 5Gi
+    storage: 50Gi
   accessModes:
     - ReadWriteOnce
   hostPath:

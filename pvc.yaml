@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: mariadb-pv-claim
 spec:
-  storageClassName: manual
+  storageClassName: db-storage-class
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 50Gi
