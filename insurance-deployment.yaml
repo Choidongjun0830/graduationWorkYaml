@@ -37,7 +37,7 @@ spec:
             #       name: insurance-secret
             #       key: spring.datasource.password
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:mysql://mariadb:3306/graduationWork?serverTimezone=Asia/Seoul"
+              value: "jdbc:mysql://localhost:3306/graduationWork?serverTimezone=Asia/Seoul"
             - name: SPRING_DATASOURCE_USERNAME
               value: "root"
             - name: SPRING_DATASOURCE_PASSWORD
