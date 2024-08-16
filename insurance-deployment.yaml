@@ -15,8 +15,34 @@ spec:
         app: insurance
     spec:
       containers:
-        - image: choidongjun/test:latest
+        - image: choidongjun/graduationWork:latest
           name: insurance
           ports:
             - containerPort: 8080
               name: insurance
+          env:
+            - name: SPRING_DATASOURCE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: spring.datasource.url
+            - name: SPRING_DATASOURCE_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: spring.datasource.username
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: spring.datasource.password
+            - name: SPRING_MAIL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: spring.mail.username
+            - name: SPRING_MAIL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: insurance-secret
+                  key: spring.mail.password
