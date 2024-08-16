@@ -39,7 +39,7 @@ spec:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:mysql://mariadb:3306/graduationWork?serverTimezone=Asia/Seoul"
             - name: SPRING_DATASOURCE_USERNAME
-              value: "dongjun"
+              value: "root"
             - name: SPRING_DATASOURCE_PASSWORD
               value: "Choi8921!"
             - name: SPRING_MAIL_USERNAME
