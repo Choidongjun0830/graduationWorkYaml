@@ -26,16 +26,22 @@ spec:
             #     secretKeyRef:
             #       name: insurance-secret
             #       key: spring.datasource.url
+            # - name: SPRING_DATASOURCE_USERNAME
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: insurance-secret
+            #       key: spring.datasource.username
+            # - name: SPRING_DATASOURCE_PASSWORD
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: insurance-secret
+            #       key: spring.datasource.password
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:mysql://mariadb:3306/graduationWork?serverTimezone=Asia/Seoul"
             - name: SPRING_DATASOURCE_USERNAME
-              valueFrom:
-                secretKeyRef:
-                  name: insurance-secret
-                  key: spring.datasource.username
+              value: "dongjun"
             - name: SPRING_DATASOURCE_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: insurance-secret
-                  key: spring.datasource.password
+              value: "Choi8921!"
             - name: SPRING_MAIL_USERNAME
               valueFrom:
                 secretKeyRef:
