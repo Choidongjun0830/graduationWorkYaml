@@ -15,7 +15,7 @@ spec:
         app: insurance
     spec:
       containers:
-        - image: docker.io/choidongjun/graduationwork:51
+        - image: docker.io/choidongjun/graduationwork:53
           name: insurance
           ports:
             - containerPort: 8080
