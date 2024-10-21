@@ -56,8 +56,3 @@ spec:
                 secretKeyRef:
                   name: insurance-secret
                   key: metamask.private.key
-            - name: OPENAPI_PRIVATE_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: insurance-secret
-                  key: openapi.private.key
